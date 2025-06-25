@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us - Capital Estate & Builders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <!-- Navbar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">Capital Estate & Builders</a>
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Nav Links -->
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>Reach out to us for the best real estate solutions!</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Let’s Start a Conversation</h2>
+                <p>Ask how we can help you:</p>
+                <ul>
+                    <li><strong>Learn about our services:</strong> Discover what we offer and how we can help with your real estate needs.</li>
+                    <li><strong>Stay informed:</strong> Get insights and updates from our experienced professionals.</li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <p>Please note: all fields are required.</p>
+                <form action="#">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We provide high-quality content, tutorials, and services to help you grow and learn new skills.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                  <img src="fb.png" alt="Twitter">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="insta.jpg" alt="Instagram">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Capital Estate & Builders. All Rights Reserved.By Minahil</p>
+    </div>
+  </footer>
+
+    <script>
+        // Toggle Hamburger Menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+        // Footer
+    // Dynamic Year Update
+const currentYearElement = document.getElementById('current-year');
+const currentYear = new Date().getFullYear();
+currentYearElement.textContent = currentYear;
+
+    </script>
+</body>
+</html>
